@@ -1,0 +1,213 @@
+.cruciverba {
+    line-height: var(--line-1);
+    font-size: 3vw;
+    color: var(--color-medium);
+    position: relative
+}
+
+.cruciverba .bordo-destro {
+    height: 100%;
+    border-left: 1px solid var(--color-extradark);
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.cruciverba .bordo-sotto {
+    width: 100%;
+    border-top: 1px solid var(--color-extradark);
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.cruciverba .row {
+    border-top: 1px solid var(--color-extradark);
+    position: relative;
+    z-index: 100
+}
+
+.cruciverba .col-1 {
+    border-left: 1px solid var(--color-extradark)
+}
+
+.cruciverba .col-1 div {
+    padding-top: 100%;
+    position: relative
+}
+
+.cruciverba .col-1 span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.cruciverba .attivo {
+    font-weight: var(--weight-bold);
+    color: var(--color-accent-3)
+}
+
+.cruciverba-vortice {
+    width: 40%;
+    transform: translate(30%, -60%)
+}
+
+@media (min-width:992px) {
+    .cruciverba {
+        font-size: var(--font-5)
+    }
+    .cruciverba .attivo {
+        color: var(--color-extradark)
+    }
+}
+
+.cruciverba .freccia {
+    position: absolute;
+    overflow: hidden
+}
+
+.cruciverba .freccia-inner {
+    width: 100%;
+    height: 100%
+}
+
+.cruciverba .linea {
+    position: absolute
+}
+
+.cruciverba .punta {
+    width: 25px;
+    height: 25px;
+    border: 3px solid var(--color-accent-3);
+    border-top: none;
+    border-left: none;
+    position: absolute
+}
+
+.cruciverba .freccia--1 {
+    height: calc(100% + 20px);
+    width: 8.3333333333%;
+    top: 6px;
+    left: 0
+}
+
+.cruciverba .freccia--1 .freccia-inner {
+    transform: translateY(-100%)
+}
+
+.cruciverba .freccia--1 .linea {
+    height: 100%;
+    border-left: 3px solid var(--color-accent-3);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+.cruciverba .freccia--1 .punta {
+    left: 50%;
+    bottom: 3px;
+    transform: translate(-50%, 0px) rotate(45deg)
+}
+
+.cruciverba .freccia--2 {
+    width: calc(100% - 8.3333333333% + 20px);
+    height: 8.3333333333%;
+    top: 8.3333333333%;
+    left: calc(8.3333333333% + 6px)
+}
+
+.cruciverba .freccia--2 .freccia-inner {
+    transform: translateX(-100%)
+}
+
+.cruciverba .freccia--2 .linea {
+    width: 100%;
+    border-top: 3px solid var(--color-accent-3);
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%)
+}
+
+.cruciverba .freccia--2 .punta {
+    right: 3px;
+    top: 50%;
+    transform: translate(0, -50%) rotate(-45deg)
+}
+
+.cruciverba .freccia--3 {
+    height: calc(8.3333333333%*9 + 20px);
+    width: 8.3333333333%;
+    top: 6px;
+    left: calc(8.3333333333%*2)
+}
+
+.cruciverba .freccia--3 .freccia-inner {
+    transform: translateY(-100%)
+}
+
+.cruciverba .freccia--3 .linea {
+    height: 100%;
+    border-left: 3px solid var(--color-accent-3);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+.cruciverba .freccia--3 .punta {
+    left: 50%;
+    bottom: 3px;
+    transform: translate(-50%, 0px) rotate(45deg)
+}
+
+.cruciverba .freccia--4 {
+    width: calc(1.414*8.3333333333%*9 + 20px);
+    height: 8.3333333333%;
+    bottom: calc(-8.3333333333% + 6px);
+    left: calc(8.3333333333% + 6px);
+    transform: rotate(-45deg) translate(0%, -50%);
+    transform-origin: top left
+}
+
+.cruciverba .freccia--4 .freccia-inner {
+    transform: translateX(-100%)
+}
+
+.cruciverba .freccia--4 .linea {
+    width: 100%;
+    border-top: 3px solid var(--color-accent-3);
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%)
+}
+
+.cruciverba .freccia--4 .punta {
+    right: 3px;
+    top: 50%;
+    transform: translate(0, -50%) rotate(-45deg)
+}
+
+.cruciverba .freccia--5 {
+    height: calc(100% + 20px);
+    width: 8.3333333333%;
+    top: 6px;
+    left: calc(8.3333333333%*11)
+}
+
+.cruciverba .freccia--5 .freccia-inner {
+    transform: translateY(-100%)
+}
+
+.cruciverba .freccia--5 .linea {
+    height: 100%;
+    border-left: 3px solid var(--color-accent-3);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+.cruciverba .freccia--5 .punta {
+    left: 50%;
+    bottom: 3px;
+    transform: translate(-50%, 0px) rotate(45deg)
+}

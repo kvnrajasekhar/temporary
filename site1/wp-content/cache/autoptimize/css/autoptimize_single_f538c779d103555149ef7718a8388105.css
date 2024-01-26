@@ -1,0 +1,113 @@
+span.wpcf7-not-valid-tip {
+    color: var(--color-error);
+    font-size: var(--font-3);
+    margin-top: var(--space-2)
+}
+
+div.wpcf7-response-output {
+    margin: var(--space-6) 0 0 0 !important;
+    padding: var(--space-2);
+    border: 2px solid var(--color-error)
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+    border: 2px solid var(--color-error)
+}
+
+div.wpcf7-mail-sent-ok {
+    border: 2px solid var(--color-success)
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: var(--color-accent-2)
+}
+
+span.wpcf7-list-item {
+    margin: 0
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+    border-color: var(--color-error);
+    padding: var(--space-2)
+}
+
+.wpcf7-checkbox,
+.wpcf7-radio {
+    position: relative;
+    display: flex;
+    flex-direction: column
+}
+
+span.wpcf7-not-valid-tip {
+    font-size: var(--font-1)
+}
+
+.wpcf7-form .wpcf7-spinner {
+    display: none
+}
+
+.wpcf7-form input,
+.wpcf7-form select,
+.wpcf7-form textarea {
+    border-color: var(--color-extradark)
+}
+
+.wpcf7-form label {
+    font-weight: var(--weight-regular)
+}
+
+.wpcf7-form input,
+.wpcf7-form select {
+    border-width: 0 0 1px
+}
+
+.wpcf7-form .form-submit-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: right
+}
+
+.wpcf7-form .form-submit-wrap input {
+    background: 0 0;
+    padding: 0;
+    margin: 0;
+    color: var(--color-accent-3);
+    border: none;
+    text-transform: capitalize;
+    font-size: var(--font-10);
+    font-weight: var(--weight-regular)
+}
+
+.wpcf7-form .form-submit-fornitore input {
+    color: var(--color-accent-1)
+}
+
+.wpcf7-form .form-submit-wrap:after {
+    content: '';
+    background-image: url(//www.bieffeforniture.it/wp-content/themes/heysito-child/assets/css/../images/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 6vw;
+    height: 6vw;
+    display: block;
+    margin-left: var(--space-4)
+}
+
+.wpcf7-form .wpcf7-acceptance a {
+    color: var(--color-extradark)
+}
+
+.wpcf7-form input[type=file] {
+    font-size: var(--font-2)
+}
+
+@media (min-width:992px) {
+    .wpcf7-form .form-submit-wrap:after {
+        width: 3vw;
+        height: 3vw;
+        margin-left: var(--space-5)
+    }
+}

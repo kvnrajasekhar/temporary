@@ -1,0 +1,114 @@
+img[data-srcset] {
+    transition: opacity .3s;
+    opacity: 0
+}
+
+img[data-srcset].lazyloaded {
+    opacity: 1
+}
+
+.chatbot .icon {
+    width: 50px;
+    height: 50px
+}
+
+.border-collapse-x {
+    margin-left: -1px;
+    margin-right: -1px
+}
+
+.marquee-loop {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee-loop 30s linear infinite
+}
+
+.marquee--reverse .marquee-loop {
+    animation: marquee-loop-reverse 30s linear infinite
+}
+
+.marquee-inner,
+.marquee-content {
+    display: inline-block
+}
+
+@keyframes marquee-loop {
+    0% {
+        margin-left: 0
+    }
+    100% {
+        margin-left: -50%
+    }
+}
+
+@keyframes marquee-loop-reverse {
+    0% {
+        margin-left: -50%
+    }
+    100% {
+        margin-left: 0
+    }
+}
+
+.dot-bg {
+    background-image: url('/wp-content/themes/heysito-child/assets/images/dot.png');
+    background-size: 16px;
+    background-position: -2px -2px
+}
+
+@media (min-width:992px) {
+    .dot-bg {
+        background-size: 32px;
+        background-position: -8px -8px
+    }
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--color-extralight);
+    z-index: 400;
+    pointer-events: none
+}
+
+.is-loading-screen-end .loading-screen {
+    display: none !important
+}
+
+.loading-screen-text-1 {
+    opacity: 0
+}
+
+.loading-screen-text-2 {
+    opacity: 0
+}
+
+.loading-screen-panel-1,
+.loading-screen-panel-2,
+.loading-screen-panel-3 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(100%)
+}
+
+#custom-cursor {
+    --y: 0;
+    --x: 0;
+    position: fixed;
+    top: var(--y);
+    left: var(--x);
+    pointer-events: none;
+    transform: translate(100%, 100%);
+    transition: opacity .3s, scale .3s;
+    opacity: 0;
+    z-index: 99999;
+    width: 10px;
+    height: 10px;
+    background: var(--color-accent-2)
+}
